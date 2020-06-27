@@ -9,6 +9,7 @@ document.ready = function( callback ) {
 	}
 };
 
+console.log("pog");
 
 (function() {
 	document.ready( function() {
