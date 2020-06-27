@@ -1,0 +1,73 @@
+/* Here's the important part of the Bar */
+#progressbar {
+	position: fixed;
+	height: 8px;
+	z-index: 99;
+	top: 0;
+	left: 0;
+	right: calc( 100% );
+	background-color: #fc4040;
+	transition: right .5s cubic-bezier(0.83, 0, 0.17, 1);
+}
+
+div.content{
+	width: 100%;
+	height: 100%;
+	background-color: #00000000;
+}
+
+video{
+	  width: 100%;
+	  height: 100%;
+  }
+
+/* Some stuff to make the screen look pretty */
+html {
+	font-family: ComicSans
+}
+
+body {
+	overflow: hidden;
+	overflow-y: hidden;
+	
+	position: relative;
+	
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+body:after {
+	content: " ";
+	display: block;
+	
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 0;
+	}
+body:before {
+	content: " ";
+	display: block;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+	}
+
+.content {
+	text-align: center;
+	padding: 0px;
+	width: calc( 100% - 120px );
+	color: #ffffff;
+	background-color: rgba( 0, 0, 0, .5 );
+}
+
+.footer-content {
+	position: absolute;
+	bottom: 0;
+	width: calc( 100% - 180px );
+}
