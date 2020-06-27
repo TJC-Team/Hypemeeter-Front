@@ -14,7 +14,7 @@ document.ready = function( callback ) {
 	document.ready( function() {
 		let progressbar = document.getElementById( "progressbar" );
 
-		if( !!progressbar ) {
+		if( progressbar ) {
 
 			let body = document.getElementsByTagName( "body" )[0];
 			let window_height = body.offsetHeight;
@@ -43,7 +43,7 @@ document.ready = function( callback ) {
 			    },
 			    "text"
 			  );
-			};
+			}
 
 
 			function pog(data2){
@@ -60,7 +60,7 @@ document.ready = function( callback ) {
 
 				}
 
-			};
+			}
 
 			window.addEventListener( "resize", refactorScreenHeight );
 			var mutationObserver = new MutationObserver( refactorScreenHeight );
@@ -89,7 +89,7 @@ document.ready = function( callback ) {
 				if(percentage > 99){
 					function randomInRange(min, max) {
 						return Math.random() * (max - min) + min;
-					  };
+					  }
 					  
 					  
 					  confetti({
@@ -98,7 +98,7 @@ document.ready = function( callback ) {
 						particleCount: randomInRange(50, 100),
 						origin: { y: 0, x: 1 }
 					  })
-				};
+				}
 
 				notiup = percentage - percentageold;
 				percentageold = percentage;
@@ -114,7 +114,7 @@ document.ready = function( callback ) {
 				}
 				else if (notiup < 0){
 					notion = false
-				};
+				}
 
 
 				if(notion === true && notiplayon === false){
